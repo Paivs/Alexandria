@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS books (
   category_id   INT           DEFAULT NULL,
   quantity      INT           NOT NULL DEFAULT 1,
   available_qty INT           NOT NULL DEFAULT 1,
-  published_year YEAR         DEFAULT NULL,
+  published_year SMALLINT UNSIGNED DEFAULT NULL,
   created_at    TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id),
   UNIQUE KEY uq_books_isbn (isbn),
